@@ -1,0 +1,15 @@
+{
+  "name": "homa-image-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cruza produtos hôma (SFCC) com imagens na Keepeek via EAN, classifica as imagens e mostra que categorias faltam gerar.",
+  "scripts": {
+    "sync": "node scripts/run-batch.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "fast-xml-parser": "^4.5.0",
+    "playwright": "^1.48.0"
+  }
+}

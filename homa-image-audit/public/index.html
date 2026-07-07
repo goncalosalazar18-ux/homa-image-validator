@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hôma · auditoria de imagens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">hôma</span>
+      <span class="brand-sub">auditoria de imagens</span>
+    </div>
+    <div class="topbar-actions">
+      <span id="last-updated" class="last-updated">a carregar…</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="check-panel">
+      <h2>Verificar EAN</h2>
+      <p class="check-panel-hint">
+        Cola aqui os EAN que queres verificar agora (separados por vírgula, espaço ou uma
+        linha por EAN). Máximo de 100 por verificação.
+      </p>
+      <textarea
+        id="ean-input"
+        rows="4"
+        placeholder="Ex: 5601234567890, 5601234567891, 5601234567892..."
+      ></textarea>
+      <div class="check-panel-footer">
+        <span id="ean-count" class="ean-count">0 / 100 EAN</span>
+        <button id="sync-button" class="btn-primary">Verificar estes EAN</button>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="stat-value" id="stat-total">–</span>
+        <span class="stat-label">produtos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-completos">–</span>
+        <span class="stat-label">completos</span>
+      </div>
+      <div class="stat-card stat-card--accent">
+        <span class="stat-value" id="stat-em-falta">–</span>
+        <span class="stat-label">com imagens em falta</span>
+      </div>
+    </section>
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="Procurar por EAN ou nome do produto" />
+      <select id="filter-categoria">
+        <option value="">Todas as categorias</option>
+        <option value="produto">Falta: produto</option>
+        <option value="close-up">Falta: close-up</option>
+        <option value="ambiente">Falta: ambiente</option>
+      </select>
+    </section>
+
+    <table class="products-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>EAN</th>
+          <th>Produto</th>
+          <th>Produto</th>
+          <th>Close-up</th>
+          <th>Ambiente</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="products-body">
+        <tr><td colspan="7" class="empty-state">A carregar produtos…</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

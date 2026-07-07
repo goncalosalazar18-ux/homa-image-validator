@@ -1,0 +1,256 @@
+:root {
+  --homa-brand: #DAAA00;
+  --homa-brand-light: #FAEEC9;
+  --homa-text-primary: #181818;
+  --homa-text-secondary: #444444;
+  --homa-bg-white: #FFFFFF;
+  --homa-bg-light: #F3F3F3;
+  --homa-bg-beige: #F5F0E8;
+  --homa-border: #E5E5E5;
+  --homa-success: #41B658;
+  --homa-success-bg: #EBF7E6;
+  --homa-danger: #BA0517;
+  --homa-danger-bg: #FEDED8;
+  --homa-font: 'Gilroy', 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--homa-font);
+  background: var(--homa-bg-beige);
+  color: var(--homa-text-primary);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background: var(--homa-bg-white);
+  border-bottom: 1px solid var(--homa-border);
+}
+
+.brand-mark {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.brand-sub {
+  color: var(--homa-text-secondary);
+  font-size: 14px;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.last-updated {
+  font-size: 13px;
+  color: var(--homa-text-secondary);
+}
+
+.btn-primary {
+  background: var(--homa-brand);
+  color: var(--homa-text-primary);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.check-panel {
+  background: var(--homa-bg-white);
+  border: 1px solid var(--homa-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.check-panel h2 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.check-panel-hint {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--homa-text-secondary);
+}
+
+.check-panel textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--homa-border);
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.check-panel-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.ean-count {
+  font-size: 13px;
+  color: var(--homa-text-secondary);
+}
+
+.ean-count--over {
+  color: var(--homa-danger);
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  flex: 1;
+  background: var(--homa-bg-white);
+  border: 1px solid var(--homa-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-card--accent {
+  background: var(--homa-brand-light);
+  border-color: var(--homa-brand);
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--homa-text-secondary);
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.controls input,
+.controls select {
+  font-family: inherit;
+  padding: 10px 14px;
+  border: 1px solid var(--homa-border);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.controls input {
+  flex: 1;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--homa-bg-white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--homa-border);
+}
+
+.products-table th,
+.products-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--homa-border);
+  font-size: 14px;
+}
+
+.products-table th {
+  background: var(--homa-bg-light);
+  font-weight: 600;
+  color: var(--homa-text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.products-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: var(--homa-bg-light);
+  display: block;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tag--ok {
+  background: var(--homa-success-bg);
+  color: var(--homa-success);
+}
+
+.tag--missing {
+  background: var(--homa-danger-bg);
+  color: var(--homa-danger);
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge--completo {
+  background: var(--homa-success-bg);
+  color: var(--homa-success);
+}
+
+.badge--pendente {
+  background: var(--homa-brand-light);
+  color: #8C4B02;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--homa-text-secondary);
+  padding: 32px;
+}
