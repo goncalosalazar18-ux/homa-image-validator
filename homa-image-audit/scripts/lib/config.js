@@ -39,5 +39,4 @@ export function assertRuntimeConfig() {
   required('KEEPEEK_BASE_URL');
   required('KEEPEEK_EMAIL');
   required('KEEPEEK_PASSWORD');
-  required('ANTHROPIC_API_KEY');
 }

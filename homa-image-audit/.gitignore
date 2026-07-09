@@ -1,0 +1,5 @@
+node_modules/
+.env
+referencia/
+debug-*.png
+debug-*.html

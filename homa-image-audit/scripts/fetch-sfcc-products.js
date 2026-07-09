@@ -1,30 +1,18 @@
 // scripts/fetch-sfcc-products.js
-// Vai buscar o feed de produtos do SFCC e extrai EAN + imagens já existentes
-// no site.
+// Vai buscar o feed de produtos do SFCC e devolve, por Cód. Art. (g:id),
+// o título e as imagens já existentes no site.
 //
-// TODO: este parser assume um feed estilo Google Shopping (comum em SFCC),
-// com <item><g:gtin>, <g:image_link>, <g:additional_image_link>. Ajusta os
-// nomes dos campos abaixo (EAN_FIELDS / extractImages) ao feed real que
-// tens em SFCC — ou troca fetchSfccProducts() por uma chamada OCAPI se
-// preferires ir direto à Data API em vez do feed.
+// O EAN não existe neste feed — o cruzamento com o EAN é feito à parte,
+// via data/ean-to-id.json (gerado por scripts/build-ean-id-map.js).
 
 import { XMLParser } from 'fast-xml-parser';
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { config } from './lib/config.js';
 
-const EAN_FIELDS = ['g:gtin', 'gtin', 'ean'];
-
 function toArray(value) {
   if (value === undefined || value === null) return [];
   return Array.isArray(value) ? value : [value];
-}
-
-function extractEan(item) {
-  for (const field of EAN_FIELDS) {
-    if (item[field]) return String(item[field]).trim();
-  }
-  return null;
 }
 
 function extractImages(item) {
@@ -42,33 +30,40 @@ export async function fetchSfccProducts() {
     throw new Error(`Falha ao ir buscar o feed SFCC: HTTP ${response.status}`);
   }
   const xml = await response.text();
-
-  const parser = new XMLParser({ ignoreAttributes: false });
+  const parser = new XMLParser({
+    ignoreAttributes: false,
+    processEntities: {
+      enabled: true,
+      maxTotalExpansions: 200000,
+      maxExpandedLength: 5000000,
+      maxEntitySize: 50000,
+    },
+  });
   const parsed = parser.parse(xml);
-
   const items = toArray(parsed?.rss?.channel?.item);
 
-  const products = items
-    .map((item) => ({
-      ean: extractEan(item),
-      id: item['g:id'] || item.id || null,
+  const productsById = {};
+  for (const item of items) {
+    const id = item['g:id'] || item.id;
+    if (!id) continue;
+    productsById[String(id)] = {
+      id: String(id),
       title: item['g:title'] || item.title || '',
       images: extractImages(item),
-    }))
-    .filter((p) => p.ean);
+    };
+  }
 
   await mkdir(path.resolve('state'), { recursive: true });
   await writeFile(
-    path.resolve('state/site-products.json'),
-    JSON.stringify(products, null, 2)
+    path.resolve('state/site-products-by-id.json'),
+    JSON.stringify(productsById, null, 2)
   );
 
-  return products;
+  return productsById;
 }
 
-// Permite correr este ficheiro isoladamente: node scripts/fetch-sfcc-products.js
 if (import.meta.url === `file://${process.argv[1]}`) {
   fetchSfccProducts().then((products) => {
-    console.log(`${products.length} produtos com EAN encontrados no feed SFCC.`);
+    console.log(`${Object.keys(products).length} produtos encontrados no feed SFCC.`);
   });
 }

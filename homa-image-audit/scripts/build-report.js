@@ -1,11 +1,10 @@
 // scripts/build-report.js
-// Junta produtos do site + imagens da Keepeek + classificações, e calcula
-// que categorias de imagem faltam por produto (EAN). Escreve o resultado
-// em public/data/produtos.json — o único ficheiro que o dashboard lê.
+// Junta produtos do site (por Cód. Art.) com imagens da Keepeek (por EAN),
+// e compara quantas imagens existem em cada lado — sem classificação por
+// categoria, só contagem.
 
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
-import { config } from './lib/config.js';
 
 async function readJson(filePath, fallback) {
   try {
@@ -16,41 +15,29 @@ async function readJson(filePath, fallback) {
   }
 }
 
-export async function buildReport() {
-  const siteProducts = await readJson(path.resolve('state/site-products.json'), []);
+export async function buildReport({ eans, eanToId, productsById }) {
   const keepeekImages = await readJson(path.resolve('state/keepeek-images.json'), {});
-  const classifications = await readJson(path.resolve('state/classifications.json'), {});
   const existing = await readJson(path.resolve('public/data/produtos.json'), {
     updatedAt: null,
     products: [],
   });
-
   const existingByEan = new Map(existing.products.map((p) => [p.ean, p]));
 
-  for (const product of siteProducts) {
-    const allImages = [...(product.images || []), ...(keepeekImages[product.ean] || [])];
+  for (const ean of eans) {
+    const id = eanToId[ean];
+    const siteProduct = productsById[id];
+    const siteImages = siteProduct?.images || [];
+    const keepeekImagesForEan = keepeekImages[ean] || [];
 
-    const categoriasEncontradas = new Set();
-    for (const url of allImages) {
-      const category = classifications[url];
-      if (category && config.requiredCategories.includes(category)) {
-        categoriasEncontradas.add(category);
-      }
-    }
-
-    const categoriasEmFalta = config.requiredCategories.filter(
-      (c) => !categoriasEncontradas.has(c)
-    );
-
-    existingByEan.set(product.ean, {
-      ean: product.ean,
-      id: product.id,
-      title: product.title,
-      thumbnail: product.images?.[0] || allImages[0] || null,
-      categoriasEncontradas: [...categoriasEncontradas],
-      categoriasEmFalta,
-      completo: categoriasEmFalta.length === 0,
-      totalImagens: allImages.length,
+    existingByEan.set(ean, {
+      ean,
+      id: id || null,
+      title: siteProduct?.title || null,
+      thumbnail: siteImages[0] || keepeekImagesForEan[0] || null,
+      imagensNoSite: siteImages.length,
+      imagensNaKeepeek: keepeekImagesForEan.length,
+      diferenca: keepeekImagesForEan.length - siteImages.length,
+      encontradoNoSite: Boolean(siteProduct),
     });
   }
 
