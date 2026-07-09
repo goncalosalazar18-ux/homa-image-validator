@@ -1,0 +1,46 @@
+name: Verificar imagens por EAN
+
+on:
+  workflow_dispatch:
+    inputs:
+      eans:
+        description: 'Lista de EAN a verificar, separados por vírgula ou quebra de linha (máx. 100)'
+        required: true
+        type: string
+
+concurrency:
+  group: sync-images
+  cancel-in-progress: false
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: homa-image-audit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Instalar dependências
+        run: npm ci
+      - name: Instalar Chromium (Playwright)
+        run: npx playwright install --with-deps chromium
+      - name: Verificar os EAN indicados
+        env:
+          SFCC_FEED_URL: ${{ secrets.SFCC_FEED_URL }}
+          KEEPEEK_BASE_URL: ${{ secrets.KEEPEEK_BASE_URL }}
+          KEEPEEK_EMAIL: ${{ secrets.KEEPEEK_EMAIL }}
+          KEEPEEK_PASSWORD: ${{ secrets.KEEPEEK_PASSWORD }}
+          KEEPEEK_EAN_FIELD: ${{ secrets.KEEPEEK_EAN_FIELD }}
+          EAN_LIST: ${{ github.event.inputs.eans }}
+        run: npm run sync
+      - name: Guardar resultados no repositório
+        run: |
+          git config user.name "homa-image-audit-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state public/data
+          git diff --cached --quiet || git commit -m "chore: verificar EAN [skip ci]"
+          git push
