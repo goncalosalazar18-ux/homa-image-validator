@@ -1,1 +1,15 @@
-{"updatedAt": null, "products": []}
+{
+  "updatedAt": "2026-07-10T09:10:13.926Z",
+  "products": [
+    {
+      "ean": "3560231158743",
+      "id": "470208",
+      "title": "Mesa fixa XENIA em madeira eucalipto",
+      "thumbnail": "https://homastore.online/images/products/470208_mesa_fixa_xenia_em_madeira_eucalipto_homa_1.jpg",
+      "imagensNoSite": 6,
+      "imagensNaKeepeek": 14,
+      "diferenca": 8,
+      "encontradoNoSite": true
+    }
+  ]
+}
