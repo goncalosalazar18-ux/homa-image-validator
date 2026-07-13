@@ -1,6 +1,39 @@
 {
-  "updatedAt": "2026-07-13T11:11:06.601Z",
+  "updatedAt": "2026-07-13T14:48:36.171Z",
   "products": [
+    {
+      "ean": "3560231020187",
+      "id": "470136",
+      "title": "Guarda-sol LOOMPA cor café 3m",
+      "imagensNoSite": 6,
+      "imagensNaKeepeek": 14,
+      "imagensNoSiteUrls": [
+        "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_1.jpg",
+        "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_2.jpg",
+        "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_3.jpg",
+        "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_4.jpg",
+        "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_5.jpg",
+        "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_6.jpg"
+      ],
+      "imagensNaKeepeekUrls": [
+        "https://jja.dam-broadcast.com/medias/domain11509/media108922/2676687-acfqjk3w68-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media109372/2811858-4j8osdnb8g-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108726/2617917-bexqavf6q5-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108589/2576937-8gkb4wb62f-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108817/2645280-kuum96vkjk-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108817/2645283-4xnox9jn67-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108583/2575101-ap7jhbi84c-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108582/2574792-0r3lc7j75e-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108583/2575026-eu73ss534g-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108583/2575068-89aesmxprt-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108584/2575308-9v8ojnud4q-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108586/2575851-fqynvkx8mc-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108587/2576148-42grrrsvb0-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
+      ],
+      "diferenca": 8,
+      "encontradoNoSite": true
+    },
     {
       "ean": "3560231158743",
       "id": "470208",
