@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T09:10:13.926Z",
+  "updatedAt": "2026-07-13T10:58:01.819Z",
   "products": [
     {
       "ean": "3560231158743",
@@ -9,6 +9,16 @@
       "imagensNoSite": 6,
       "imagensNaKeepeek": 14,
       "diferenca": 8,
+      "encontradoNoSite": true
+    },
+    {
+      "ean": "78257282364",
+      "id": "348627",
+      "title": "Piscina Tubular Intex - 457x122Cm Intex",
+      "thumbnail": "https://homastore.online/images/products/348627_piscina_tubular_intex_457x122cm_intex_homa_1.jpg",
+      "imagensNoSite": 2,
+      "imagensNaKeepeek": 0,
+      "diferenca": -2,
       "encontradoNoSite": true
     }
   ]
