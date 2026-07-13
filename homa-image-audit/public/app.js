@@ -141,6 +141,8 @@ document.getElementById('sync-button').addEventListener('click', async () => {
     alert(
       `Verificação disparada para ${eans.length} EAN. Os dados demoram alguns minutos a atualizar — recarrega a página depois.`
     );
+    document.getElementById('ean-input').value = '';
+    updateEanCount();
   } catch (err) {
     alert(`Não foi possível disparar a verificação: ${err.message}`);
   } finally {
