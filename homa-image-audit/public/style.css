@@ -289,3 +289,16 @@ main {
   background: var(--homa-bg-light);
   color: var(--homa-text-secondary);
 }
+
+.gallery-broken {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px dashed var(--homa-border);
+  color: var(--homa-text-secondary);
+  font-size: 12px;
+  flex-shrink: 0;
+}

@@ -68,7 +68,7 @@ function galleryCell(urls) {
   return `<div class="gallery">${urls
     .map(
       (url) =>
-        `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" loading="lazy" class="gallery-thumb" /></a>`
+        `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" loading="lazy" class="gallery-thumb" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterend', '<span class=\'gallery-broken\' title=\'imagem indisponivel\'>?</span>')" /></a>`
     )
     .join('')}</div>`;
 }
