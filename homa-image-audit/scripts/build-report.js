@@ -1,7 +1,6 @@
 // scripts/build-report.js
 // Junta produtos do site (por Cód. Art.) com imagens da Keepeek (por EAN),
-// e compara quantas imagens existem em cada lado — sem classificação por
-// categoria, só contagem.
+// guardando os URLs de ambos os lados para pré-visualização no dashboard.
 
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
@@ -21,6 +20,7 @@ export async function buildReport({ eans, eanToId, productsById }) {
     updatedAt: null,
     products: [],
   });
+
   const existingByEan = new Map(existing.products.map((p) => [p.ean, p]));
 
   for (const ean of eans) {
@@ -33,9 +33,10 @@ export async function buildReport({ eans, eanToId, productsById }) {
       ean,
       id: id || null,
       title: siteProduct?.title || null,
-      thumbnail: siteImages[0] || keepeekImagesForEan[0] || null,
       imagensNoSite: siteImages.length,
       imagensNaKeepeek: keepeekImagesForEan.length,
+      imagensNoSiteUrls: siteImages,
+      imagensNaKeepeekUrls: keepeekImagesForEan,
       diferenca: keepeekImagesForEan.length - siteImages.length,
       encontradoNoSite: Boolean(siteProduct),
     });

@@ -17,66 +17,6 @@ function formatDate(iso) {
   return `atualizado ${date.toLocaleString('pt-PT')}`;
 }
 
-function categoryTag(product, categoria) {
-  const ok = product.categoriasEncontradas?.includes(categoria);
-  return `<span class="tag ${ok ? 'tag--ok' : 'tag--missing'}">${ok ? 'tem' : 'falta'}</span>`;
-}
-
-function matchesFilters(product, query, categoriaFiltro) {
-  const q = query.trim().toLowerCase();
-  const matchesQuery =
-    !q ||
-    product.ean.toLowerCase().includes(q) ||
-    (product.title || '').toLowerCase().includes(q);
-
-  const matchesCategoria = !categoriaFiltro || product.categoriasEmFalta.includes(categoriaFiltro);
-
-  return matchesQuery && matchesCategoria;
-}
-
-function render() {
-  const query = document.getElementById('search').value;
-  const categoriaFiltro = document.getElementById('filter-categoria').value;
-
-  const filtered = state.products.filter((p) => matchesFilters(p, query, categoriaFiltro));
-
-  document.getElementById('stat-total').textContent = state.products.length;
-  document.getElementById('stat-completos').textContent = state.products.filter(
-    (p) => p.completo
-  ).length;
-  document.getElementById('stat-em-falta').textContent = state.products.filter(
-    (p) => !p.completo
-  ).length;
-  document.getElementById('last-updated').textContent = formatDate(state.updatedAt);
-
-  const body = document.getElementById('products-body');
-
-  if (filtered.length === 0) {
-    body.innerHTML = `<tr><td colspan="7" class="empty-state">Sem produtos para os filtros escolhidos.</td></tr>`;
-    return;
-  }
-
-  body.innerHTML = filtered
-    .map(
-      (p) => `
-      <tr>
-        <td>${p.thumbnail ? `<img class="thumb" src="${p.thumbnail}" alt="" loading="lazy" />` : ''}</td>
-        <td>${p.ean}</td>
-        <td>${p.title || '—'}</td>
-        <td>${categoryTag(p, 'produto')}</td>
-        <td>${categoryTag(p, 'close-up')}</td>
-        <td>${categoryTag(p, 'ambiente')}</td>
-        <td><span class="badge ${p.completo ? 'badge--completo' : 'badge--pendente'}">${
-        p.completo ? 'completo' : 'a gerar'
-      }</span></td>
-      </tr>`
-    )
-    .join('');
-}
-
-document.getElementById('search').addEventListener('input', render);
-document.getElementById('filter-categoria').addEventListener('change', render);
-
 const MAX_EANS = 100;
 
 function parseEanInput(raw) {
@@ -91,6 +31,85 @@ function updateEanCount() {
   return eans;
 }
 
+function matchesFilters(product, query, filtroEstado) {
+  const q = query.trim().toLowerCase();
+  const matchesQuery =
+    !q ||
+    product.ean.toLowerCase().includes(q) ||
+    (product.title || '').toLowerCase().includes(q);
+
+  let matchesEstado = true;
+  if (filtroEstado === 'em-falta') {
+    matchesEstado = product.diferenca > 0;
+  } else if (filtroEstado === 'nao-encontrado') {
+    matchesEstado = !product.encontradoNoSite;
+  }
+
+  return matchesQuery && matchesEstado;
+}
+
+function estadoBadge(product) {
+  if (!product.encontradoNoSite) {
+    return '<span class="badge badge--neutro">não encontrado no site</span>';
+  }
+  if (product.diferenca > 0) {
+    return '<span class="badge badge--pendente">imagens em falta</span>';
+  }
+  if (product.diferenca < 0) {
+    return '<span class="badge badge--completo">site tem mais imagens</span>';
+  }
+  return '<span class="badge badge--completo">igual nos dois lados</span>';
+}
+
+function galleryCell(urls) {
+  if (!urls || urls.length === 0) {
+    return '<span class="gallery-empty">— sem imagens —</span>';
+  }
+  return `<div class="gallery">${urls
+    .map(
+      (url) =>
+        `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" loading="lazy" class="gallery-thumb" /></a>`
+    )
+    .join('')}</div>`;
+}
+
+function render() {
+  const query = document.getElementById('search').value;
+  const filtroEstado = document.getElementById('filter-estado').value;
+  const filtered = state.products.filter((p) => matchesFilters(p, query, filtroEstado));
+
+  document.getElementById('stat-total').textContent = state.products.length;
+  document.getElementById('stat-em-falta').textContent = state.products.filter(
+    (p) => p.diferenca > 0
+  ).length;
+  document.getElementById('stat-nao-encontrados').textContent = state.products.filter(
+    (p) => !p.encontradoNoSite
+  ).length;
+  document.getElementById('last-updated').textContent = formatDate(state.updatedAt);
+
+  const body = document.getElementById('products-body');
+
+  if (filtered.length === 0) {
+    body.innerHTML = `<tr><td colspan="5" class="empty-state">Sem produtos para os filtros escolhidos.</td></tr>`;
+    return;
+  }
+
+  body.innerHTML = filtered
+    .map(
+      (p) => `
+      <tr>
+        <td>${p.ean}</td>
+        <td>${p.title || '—'}</td>
+        <td>${galleryCell(p.imagensNoSiteUrls)}</td>
+        <td>${galleryCell(p.imagensNaKeepeekUrls)}</td>
+        <td>${estadoBadge(p)}</td>
+      </tr>`
+    )
+    .join('');
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('filter-estado').addEventListener('change', render);
 document.getElementById('ean-input').addEventListener('input', updateEanCount);
 
 document.getElementById('sync-button').addEventListener('click', async () => {

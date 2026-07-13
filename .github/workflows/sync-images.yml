@@ -42,5 +42,5 @@ jobs:
           git config user.name "homa-image-audit-bot"
           git config user.email "actions@users.noreply.github.com"
           git add state public/data
-          git diff --cached --quiet || git commit -m "chore: verificar EAN [skip ci]"
+              git diff --cached --quiet || git commit -m "chore: verificar EAN"
           git push

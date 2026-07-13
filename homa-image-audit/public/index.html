@@ -38,25 +38,24 @@
     <section class="stats">
       <div class="stat-card">
         <span class="stat-value" id="stat-total">–</span>
-        <span class="stat-label">produtos</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-value" id="stat-completos">–</span>
-        <span class="stat-label">completos</span>
+        <span class="stat-label">produtos verificados</span>
       </div>
       <div class="stat-card stat-card--accent">
         <span class="stat-value" id="stat-em-falta">–</span>
-        <span class="stat-label">com imagens em falta</span>
+        <span class="stat-label">com mais imagens na Keepeek do que no site</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-nao-encontrados">–</span>
+        <span class="stat-label">não encontrados no site (Cód. Art. inativo)</span>
       </div>
     </section>
 
     <section class="controls">
       <input id="search" type="search" placeholder="Procurar por EAN ou nome do produto" />
-      <select id="filter-categoria">
-        <option value="">Todas as categorias</option>
-        <option value="produto">Falta: produto</option>
-        <option value="close-up">Falta: close-up</option>
-        <option value="ambiente">Falta: ambiente</option>
+      <select id="filter-estado">
+        <option value="">Todos os estados</option>
+        <option value="em-falta">Com imagens em falta</option>
+        <option value="nao-encontrado">Não encontrados no site</option>
       </select>
     </section>
 
@@ -66,9 +65,9 @@
           <th></th>
           <th>EAN</th>
           <th>Produto</th>
-          <th>Produto</th>
-          <th>Close-up</th>
-          <th>Ambiente</th>
+          <th>Imagens no site</th>
+          <th>Imagens na Keepeek</th>
+          <th>Diferença</th>
           <th>Estado</th>
         </tr>
       </thead>
@@ -77,7 +76,6 @@
       </tbody>
     </table>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>

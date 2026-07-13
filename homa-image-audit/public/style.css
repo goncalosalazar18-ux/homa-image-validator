@@ -254,3 +254,38 @@ main {
   color: var(--homa-text-secondary);
   padding: 32px;
 }
+
+.badge--neutro {
+  background: var(--homa-bg-light);
+  color: var(--homa-text-secondary);
+}
+
+.gallery {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  max-width: 280px;
+  padding: 4px 0;
+}
+
+.gallery-thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--homa-border);
+  flex-shrink: 0;
+  display: block;
+}
+
+.gallery-empty {
+  color: var(--homa-text-secondary);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+
+.badge--neutro {
+  background: var(--homa-bg-light);
+  color: var(--homa-text-secondary);
+}
