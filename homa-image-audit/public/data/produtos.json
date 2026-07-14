@@ -1,6 +1,89 @@
 {
-  "updatedAt": "2026-07-14T08:50:14.151Z",
+  "updatedAt": "2026-07-14T08:59:29.214Z",
   "products": [
+    {
+      "ean": "3560238679241",
+      "id": "450235",
+      "title": null,
+      "imagensNoSite": 0,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": 0,
+      "encontradoNoSite": false
+    },
+    {
+      "ean": "3560231727048",
+      "id": "450397",
+      "title": null,
+      "imagensNoSite": 0,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": 0,
+      "encontradoNoSite": false
+    },
+    {
+      "ean": "3560234681842",
+      "id": "448306",
+      "title": "Cadeira com braços AXIOME noisette e branco",
+      "imagensNoSite": 4,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [
+        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_1.jpg",
+        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_2.jpg",
+        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_3.jpg",
+        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_4.jpg"
+      ],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": -4,
+      "encontradoNoSite": true
+    },
+    {
+      "ean": "3560231671105",
+      "id": "450321",
+      "title": "Cadeira com braços DIESE cinza antracite e graphite",
+      "imagensNoSite": 4,
+      "imagensNaKeepeek": 10,
+      "imagensNoSiteUrls": [
+        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_1.jpg",
+        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_2.jpg",
+        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_3.jpg",
+        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_4.jpg"
+      ],
+      "imagensNaKeepeekUrls": [
+        "https://jja.dam-broadcast.com/medias/domain11509/media109511/2853360-yy1ce8vai3-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108776/2632863-m8welw8sgn-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105592/1677751-5s6cpadgra-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105973/1792180-36fixa8k0b-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788022-li64fc5wn0-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788025-osmxnb5tmr-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788028-m461y31j7w-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788031-e7sbpffsgs-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106124/1837301-209uao5gb0-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
+      ],
+      "diferenca": 6,
+      "encontradoNoSite": true
+    },
+    {
+      "ean": "3560235598163",
+      "id": "447146",
+      "title": "Conjunto de jardim ÉVASION cinza escuro",
+      "imagensNoSite": 6,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [
+        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_1.jpg",
+        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_2.jpg",
+        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_3.jpg",
+        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_4.jpg",
+        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_5.jpg",
+        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_6.jpg"
+      ],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": -6,
+      "encontradoNoSite": true
+    },
     {
       "ean": "3560231020187",
       "id": "470136",
