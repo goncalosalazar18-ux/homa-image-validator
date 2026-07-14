@@ -1,7 +1,7 @@
 // scripts/build-report.js
-// Junta produtos do site (por Cód. Art.) com imagens da Keepeek (por EAN),
-// guardando os URLs de ambos os lados para pré-visualização no dashboard.
-
+// Junta produtos do site (por Cód. Art.) com imagens da Keepeek e da
+// EasyRE@ (ambas por EAN), guardando os URLs das três fontes para
+// pré-visualização no dashboard.
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 
@@ -16,6 +16,7 @@ async function readJson(filePath, fallback) {
 
 export async function buildReport({ eans, eanToId, productsById }) {
   const keepeekImages = await readJson(path.resolve('state/keepeek-images.json'), {});
+  const easyreaImages = await readJson(path.resolve('state/easyrea-images.json'), {});
   const existing = await readJson(path.resolve('public/data/produtos.json'), {
     updatedAt: null,
     products: [],
@@ -28,6 +29,7 @@ export async function buildReport({ eans, eanToId, productsById }) {
     const siteProduct = productsById[id];
     const siteImages = siteProduct?.images || [];
     const keepeekImagesForEan = keepeekImages[ean] || [];
+    const easyreaImagesForEan = easyreaImages[ean] || [];
 
     existingByEan.set(ean, {
       ean,
@@ -35,8 +37,10 @@ export async function buildReport({ eans, eanToId, productsById }) {
       title: siteProduct?.title || null,
       imagensNoSite: siteImages.length,
       imagensNaKeepeek: keepeekImagesForEan.length,
+      imagensNaEasyrea: easyreaImagesForEan.length,
       imagensNoSiteUrls: siteImages,
       imagensNaKeepeekUrls: keepeekImagesForEan,
+      imagensNaEasyreaUrls: easyreaImagesForEan,
       diferenca: keepeekImagesForEan.length - siteImages.length,
       encontradoNoSite: Boolean(siteProduct),
     });

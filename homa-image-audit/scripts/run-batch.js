@@ -5,6 +5,7 @@ import path from 'path';
 import { config, assertRuntimeConfig } from './lib/config.js';
 import { fetchSfccProducts } from './fetch-sfcc-products.js';
 import { fetchKeepeekImages } from './keepeek-scraper.js';
+import { fetchEasyreaImages } from './easyrea-scraper.js';
 import { buildReport } from './build-report.js';
 
 const MAX_EANS_PER_CORRIDA = 100;
@@ -51,14 +52,22 @@ async function run() {
   const productsById = await fetchSfccProducts();
 
   console.log('A pesquisar imagens na Keepeek...');
-  const { results, errors } = await fetchKeepeekImages(wanted);
-  for (const [ean, message] of Object.entries(errors)) {
+  const { results: keepeekResults, errors: keepeekErrors } = await fetchKeepeekImages(wanted);
+  for (const [ean, message] of Object.entries(keepeekErrors)) {
     console.warn(`Erro na Keepeek para ${ean}: ${message}`);
   }
-
   const keepeekImages = await readJson(path.resolve('state/keepeek-images.json'), {});
-  Object.assign(keepeekImages, results);
+  Object.assign(keepeekImages, keepeekResults);
   await writeFile(path.resolve('state/keepeek-images.json'), JSON.stringify(keepeekImages, null, 2));
+
+  console.log('A pesquisar imagens na EasyRE@...');
+  const { results: easyreaResults, errors: easyreaErrors } = await fetchEasyreaImages(wanted);
+  for (const [ean, message] of Object.entries(easyreaErrors)) {
+    console.warn(`Erro na EasyRE@ para ${ean}: ${message}`);
+  }
+  const easyreaImages = await readJson(path.resolve('state/easyrea-images.json'), {});
+  Object.assign(easyreaImages, easyreaResults);
+  await writeFile(path.resolve('state/easyrea-images.json'), JSON.stringify(easyreaImages, null, 2));
 
   console.log('A atualizar o relatório final...');
   await buildReport({ eans: wanted, eanToId, productsById });

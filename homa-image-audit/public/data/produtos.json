@@ -1,160 +1,13 @@
 {
-  "updatedAt": "2026-07-14T10:53:20.573Z",
+  "updatedAt": "2026-07-14T14:15:55.888Z",
   "products": [
-    {
-      "ean": "3560238679241",
-      "id": "450235",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560231727048",
-      "id": "450397",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560231666743",
-      "id": "450833",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 15,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media109511/2853486-7750ql9xxq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108266/2479854-rlei5r1hqn-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105592/1677886-bren4kt10p-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105993/1798069-uvnltcqh57-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795828-41ipavflmd-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795831-mi1jvjqqpq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795834-em8cueekqh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795837-k4oujj829t-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795840-rwg83ackn6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795843-3b27dre4ys-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795846-ds5jacp5kf-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795849-y6egpk6lyy-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108397/2519299-x0yv8ex5y5-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107847/2354359-kr45s7o524-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "diferenca": 15,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560233834263",
-      "id": "453668",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560231728274",
-      "id": "454176",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560234681842",
-      "id": "448306",
-      "title": "Cadeira com braços AXIOME noisette e branco",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [
-        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_1.jpg",
-        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_2.jpg",
-        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_3.jpg",
-        "https://homastore.online/images/products/448306_cadeira_com_bracos_axiome_noisette_e_branco_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": -4,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560231671105",
-      "id": "450321",
-      "title": "Cadeira com braços DIESE cinza antracite e graphite",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 10,
-      "imagensNoSiteUrls": [
-        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_1.jpg",
-        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_2.jpg",
-        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_3.jpg",
-        "https://homastore.online/images/products/450321_cadeira_com_bracos_diese_cinza_antracite_e_graphite_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media109511/2853360-yy1ce8vai3-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108776/2632863-m8welw8sgn-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105592/1677751-5s6cpadgra-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105973/1792180-36fixa8k0b-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788022-li64fc5wn0-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788025-osmxnb5tmr-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788028-m461y31j7w-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105960/1788031-e7sbpffsgs-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106124/1837301-209uao5gb0-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "diferenca": 6,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560238674819",
-      "id": "453666",
-      "title": "Cadeira com braços ESSIO noisette e branco",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [
-        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_1.jpg",
-        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_2.jpg",
-        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_3.jpg",
-        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": -4,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560235598163",
-      "id": "447146",
-      "title": "Conjunto de jardim ÉVASION cinza escuro",
-      "imagensNoSite": 6,
-      "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [
-        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_1.jpg",
-        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_2.jpg",
-        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_3.jpg",
-        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_4.jpg",
-        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_5.jpg",
-        "https://homastore.online/images/products/447146_conjunto_de_jardim_evasion_cinza_escuro_homa_6.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "diferenca": -6,
-      "encontradoNoSite": true
-    },
     {
       "ean": "3560231020187",
       "id": "470136",
       "title": "Guarda-sol LOOMPA cor café 3m",
       "imagensNoSite": 6,
       "imagensNaKeepeek": 14,
+      "imagensNaEasyrea": 13,
       "imagensNoSiteUrls": [
         "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_1.jpg",
         "https://homastore.online/images/products/470136_guarda_sol_loompa_cor_cafe_3m_homa_2.jpg",
@@ -179,37 +32,22 @@
         "https://jja.dam-broadcast.com/medias/domain11509/media108587/2576148-42grrrsvb0-xlarge.jpg",
         "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
       ],
+      "imagensNaEasyreaUrls": [
+        "https://media.jja-sa.com/165527S/86d1b061-7ed8-4868-8d77-6e83b422bc82.jpg",
+        "https://media.jja-sa.com/165527S/e47c607b-b636-4d15-bf5a-85df4c3e8502.jpg",
+        "https://media.jja-sa.com/165527S/cab95c62-192b-475d-9fa8-4fbf012e64dd.jpg",
+        "https://media.jja-sa.com/165527S/ab4e4a83-d95a-4aa8-9a40-795e6ee4e701.jpg",
+        "https://media.jja-sa.com/165527S/ee85a020-9e7e-42fc-976b-0b96307b8dea.jpg",
+        "https://media.jja-sa.com/165527S/d015f517-02cd-4c59-a3fd-c5d8f122f2f6.jpg",
+        "https://media.jja-sa.com/165527S/f157dd5c-6ddb-4d27-8f7b-15ac783f5feb.jpg",
+        "https://media.jja-sa.com/165527S/4d636985-d6a7-43a6-84ec-092f88ca6af3.jpg",
+        "https://media.jja-sa.com/165527S/f456431d-e615-43c9-919e-62cbf6ed1a36.jpg",
+        "https://media.jja-sa.com/165527S/fc075c93-8778-407f-abc0-dfd4fb944726.jpg",
+        "https://media.jja-sa.com/165527S/aa987ab4-701a-47bd-a065-b0d965ec8065.jpg",
+        "https://media.jja-sa.com/165527S/b49d7db8-41aa-43d7-963c-5f50434e7b2f.jpg",
+        "https://media.jja-sa.com/165527S/619cd366-7df9-446b-969f-91cec71dcc2b.jpg"
+      ],
       "diferenca": 8,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560231729257",
-      "id": "454177",
-      "title": "Mesa de apoio ALLURE branco em alumínio",
-      "imagensNoSite": 5,
-      "imagensNaKeepeek": 12,
-      "imagensNoSiteUrls": [
-        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_1.jpg",
-        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_2.jpg",
-        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_3.jpg",
-        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_4.jpg",
-        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_5.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media109512/2853612-yccya07mif-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105467/1640152-bq2cx8897h-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106036/1810813-k5jm7ajnfl-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107876/2363023-k699g8hdkh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788541-4xtro3aq8s-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788523-nu91btt7yu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788526-tv4kb47oci-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788529-unuc3tb8we-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788532-kwb5em94dr-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788535-aafivscobf-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788538-ne7k9rj4jn-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "diferenca": 7,
       "encontradoNoSite": true
     },
     {
@@ -226,13 +64,9 @@
       "ean": "78257282364",
       "id": "348627",
       "title": "Piscina Tubular Intex - 457x122Cm Intex",
+      "thumbnail": "https://homastore.online/images/products/348627_piscina_tubular_intex_457x122cm_intex_homa_1.jpg",
       "imagensNoSite": 2,
       "imagensNaKeepeek": 0,
-      "imagensNoSiteUrls": [
-        "https://homastore.online/images/products/348627_piscina_tubular_intex_457x122cm_intex_homa_1.jpg",
-        "https://homastore.online/images/products/348627_piscina_tubular_intex_457x122cm_intex_homa_2.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
       "diferenca": -2,
       "encontradoNoSite": true
     }

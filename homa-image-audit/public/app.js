@@ -102,6 +102,7 @@ function render() {
         <td>${p.title || '—'}</td>
         <td>${galleryCell(p.imagensNoSiteUrls)}</td>
         <td>${galleryCell(p.imagensNaKeepeekUrls)}</td>
+        <td>${galleryCell(p.imagensNaEasyreaUrls)}</td>
         <td>${estadoBadge(p)}</td>
       </tr>`
     )

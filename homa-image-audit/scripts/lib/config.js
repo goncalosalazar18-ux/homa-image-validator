@@ -19,6 +19,9 @@ export const config = {
   keepeekBaseUrl: process.env.KEEPEEK_BASE_URL || '',
   keepeekEmail: process.env.KEEPEEK_EMAIL || '',
   keepeekPassword: process.env.KEEPEEK_PASSWORD || '',
+  easyreaBaseUrl: process.env.EASYREA_BASE_URL || '',
+  easyreaUsername: process.env.EASYREA_USERNAME || '',
+  easyreaPassword: process.env.EASYREA_PASSWORD || '',
   // Nome do campo de metadados onde o EAN está guardado na Keepeek.
   // TODO: confirmar o nome exato inspecionando a pesquisa avançada na Keepeek.
   keepeekEanField: process.env.KEEPEEK_EAN_FIELD || 'ean',
@@ -39,4 +42,7 @@ export function assertRuntimeConfig() {
   required('KEEPEEK_BASE_URL');
   required('KEEPEEK_EMAIL');
   required('KEEPEEK_PASSWORD');
+  required('EASYREA_BASE_URL');
+  required('EASYREA_USERNAME');
+  required('EASYREA_PASSWORD');
 }
