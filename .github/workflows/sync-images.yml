@@ -35,6 +35,9 @@ jobs:
           KEEPEEK_EMAIL: ${{ secrets.KEEPEEK_EMAIL }}
           KEEPEEK_PASSWORD: ${{ secrets.KEEPEEK_PASSWORD }}
           KEEPEEK_EAN_FIELD: ${{ secrets.KEEPEEK_EAN_FIELD }}
+          EASYREA_BASE_URL: ${{ secrets.EASYREA_BASE_URL }}
+          EASYREA_USERNAME: ${{ secrets.EASYREA_USERNAME }}
+          EASYREA_PASSWORD: ${{ secrets.EASYREA_PASSWORD }}
           EAN_LIST: ${{ github.event.inputs.eans }}
         run: npm run sync
       - name: Guardar resultados no repositório
