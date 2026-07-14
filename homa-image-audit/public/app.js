@@ -1,6 +1,7 @@
 const state = {
   products: [],
   updatedAt: null,
+  selectedEans: new Set(),
 };
 
 async function loadData() {
@@ -37,14 +38,12 @@ function matchesFilters(product, query, filtroEstado) {
     !q ||
     product.ean.toLowerCase().includes(q) ||
     (product.title || '').toLowerCase().includes(q);
-
   let matchesEstado = true;
   if (filtroEstado === 'em-falta') {
     matchesEstado = product.diferenca > 0;
   } else if (filtroEstado === 'nao-encontrado') {
     matchesEstado = !product.encontradoNoSite;
   }
-
   return matchesQuery && matchesEstado;
 }
 
@@ -68,9 +67,33 @@ function galleryCell(urls) {
   return `<div class="gallery">${urls
     .map(
       (url) =>
-        `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" loading="lazy" class="gallery-thumb" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterend', '<span class=\'gallery-broken\' title=\'imagem indisponivel\'>?</span>')" /></a>`
+        `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" data-fallback="true" loading="lazy" class="gallery-thumb" /></a>`
     )
     .join('')}</div>`;
+}
+
+function attachImageFallbacks(container) {
+  container.querySelectorAll('img[data-fallback="true"]').forEach((img) => {
+    img.addEventListener(
+      'error',
+      () => {
+        img.style.display = 'none';
+        const span = document.createElement('span');
+        span.className = 'gallery-broken';
+        span.title = 'imagem indisponivel';
+        span.textContent = '?';
+        img.insertAdjacentElement('afterend', span);
+      },
+      { once: true }
+    );
+  });
+}
+
+function updateDeleteButton() {
+  const button = document.getElementById('delete-selected');
+  const count = state.selectedEans.size;
+  button.textContent = `Eliminar selecionados (${count})`;
+  button.disabled = count === 0;
 }
 
 function render() {
@@ -90,7 +113,8 @@ function render() {
   const body = document.getElementById('products-body');
 
   if (filtered.length === 0) {
-    body.innerHTML = `<tr><td colspan="5" class="empty-state">Sem produtos para os filtros escolhidos.</td></tr>`;
+    body.innerHTML = `<tr><td colspan="8" class="empty-state">Sem produtos para os filtros escolhidos.</td></tr>`;
+    updateDeleteButton();
     return;
   }
 
@@ -98,25 +122,93 @@ function render() {
     .map(
       (p) => `
       <tr>
+        <td><input type="checkbox" class="row-select" data-ean="${p.ean}" ${
+        state.selectedEans.has(p.ean) ? 'checked' : ''
+      } /></td>
         <td>${p.ean}</td>
         <td>${p.title || '—'}</td>
         <td>${galleryCell(p.imagensNoSiteUrls)}</td>
         <td>${galleryCell(p.imagensNaKeepeekUrls)}</td>
         <td>${galleryCell(p.imagensNaEasyreaUrls)}</td>
         <td>${estadoBadge(p)}</td>
+        <td><button class="btn-delete-row" data-ean="${p.ean}" title="Eliminar esta consulta">✕</button></td>
       </tr>`
     )
     .join('');
+
+  attachImageFallbacks(body);
+
+  body.querySelectorAll('.row-select').forEach((checkbox) => {
+    checkbox.addEventListener('change', () => {
+      const ean = checkbox.dataset.ean;
+      if (checkbox.checked) {
+        state.selectedEans.add(ean);
+      } else {
+        state.selectedEans.delete(ean);
+      }
+      updateDeleteButton();
+    });
+  });
+
+  body.querySelectorAll('.btn-delete-row').forEach((button) => {
+    button.addEventListener('click', () => {
+      const ean = button.dataset.ean;
+      if (confirm(`Eliminar a consulta do EAN ${ean}?`)) {
+        deleteProducts([ean]);
+      }
+    });
+  });
+
+  updateDeleteButton();
+}
+
+async function deleteProducts(eans) {
+  if (eans.length === 0) return;
+  const secret = window.prompt('Palavra-passe para eliminar:');
+  if (!secret) return;
+  try {
+    const res = await fetch('/api/delete-products', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-trigger-secret': secret },
+      body: JSON.stringify({ eans }),
+    });
+    if (!res.ok) throw new Error(await res.text());
+    const eansSet = new Set(eans);
+    state.products = state.products.filter((p) => !eansSet.has(p.ean));
+    eans.forEach((ean) => state.selectedEans.delete(ean));
+    render();
+    alert(`${eans.length} consulta(s) eliminada(s) com sucesso.`);
+  } catch (err) {
+    alert(`Não foi possível eliminar: ${err.message}`);
+  }
 }
 
 document.getElementById('search').addEventListener('input', render);
 document.getElementById('filter-estado').addEventListener('change', render);
 document.getElementById('ean-input').addEventListener('input', updateEanCount);
 
+document.getElementById('select-all').addEventListener('change', (e) => {
+  const query = document.getElementById('search').value;
+  const filtroEstado = document.getElementById('filter-estado').value;
+  const filtered = state.products.filter((p) => matchesFilters(p, query, filtroEstado));
+  if (e.target.checked) {
+    filtered.forEach((p) => state.selectedEans.add(p.ean));
+  } else {
+    filtered.forEach((p) => state.selectedEans.delete(p.ean));
+  }
+  render();
+});
+
+document.getElementById('delete-selected').addEventListener('click', () => {
+  const eans = [...state.selectedEans];
+  if (confirm(`Eliminar ${eans.length} consulta(s) selecionada(s)?`)) {
+    deleteProducts(eans);
+  }
+});
+
 document.getElementById('sync-button').addEventListener('click', async () => {
   const button = document.getElementById('sync-button');
   const eans = updateEanCount();
-
   if (eans.length === 0) {
     alert('Cola pelo menos um EAN.');
     return;
@@ -125,13 +217,10 @@ document.getElementById('sync-button').addEventListener('click', async () => {
     alert(`Tens ${eans.length} EAN — reduz para no máximo ${MAX_EANS}.`);
     return;
   }
-
   const secret = window.prompt('Palavra-passe para disparar a verificação:');
   if (!secret) return;
-
   button.disabled = true;
   button.textContent = 'A disparar…';
-
   try {
     const res = await fetch('/api/trigger-sync', {
       method: 'POST',
@@ -139,11 +228,11 @@ document.getElementById('sync-button').addEventListener('click', async () => {
       body: JSON.stringify({ eans }),
     });
     if (!res.ok) throw new Error(await res.text());
+    document.getElementById('ean-input').value = '';
+    updateEanCount();
     alert(
       `Verificação disparada para ${eans.length} EAN. Os dados demoram alguns minutos a atualizar — recarrega a página depois.`
     );
-    document.getElementById('ean-input').value = '';
-    updateEanCount();
   } catch (err) {
     alert(`Não foi possível disparar a verificação: ${err.message}`);
   } finally {

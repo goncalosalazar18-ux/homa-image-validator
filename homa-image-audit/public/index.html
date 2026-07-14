@@ -16,7 +16,6 @@
       <span id="last-updated" class="last-updated">a carregar…</span>
     </div>
   </header>
-
   <main>
     <section class="check-panel">
       <h2>Verificar EAN</h2>
@@ -34,7 +33,6 @@
         <button id="sync-button" class="btn-primary">Verificar estes EAN</button>
       </div>
     </section>
-
     <section class="stats">
       <div class="stat-card">
         <span class="stat-value" id="stat-total">–</span>
@@ -49,7 +47,6 @@
         <span class="stat-label">não encontrados no site (Cód. Art. inativo)</span>
       </div>
     </section>
-
     <section class="controls">
       <input id="search" type="search" placeholder="Procurar por EAN ou nome do produto" />
       <select id="filter-estado">
@@ -57,23 +54,23 @@
         <option value="em-falta">Com imagens em falta</option>
         <option value="nao-encontrado">Não encontrados no site</option>
       </select>
+      <button id="delete-selected" class="btn-danger" disabled>Eliminar selecionados (0)</button>
     </section>
-
     <table class="products-table">
       <thead>
         <tr>
-          <th></th>
+          <th><input type="checkbox" id="select-all" /></th>
           <th>EAN</th>
           <th>Produto</th>
-          <th>Imagens no site</th>
-          <th>Imagens na Keepeek</th>
-          <th>Imagens na EasyRE@</th>
-          <th>Diferença</th>
+          <th>Site</th>
+          <th>Keepeek</th>
+          <th>EasyRE@</th>
           <th>Estado</th>
+          <th></th>
         </tr>
       </thead>
       <tbody id="products-body">
-        <tr><td colspan="7" class="empty-state">A carregar produtos…</td></tr>
+        <tr><td colspan="8" class="empty-state">A carregar produtos…</td></tr>
       </tbody>
     </table>
   </main>
