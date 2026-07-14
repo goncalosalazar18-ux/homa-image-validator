@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T08:59:29.214Z",
+  "updatedAt": "2026-07-14T10:53:20.573Z",
   "products": [
     {
       "ean": "3560238679241",
@@ -15,6 +15,55 @@
     {
       "ean": "3560231727048",
       "id": "450397",
+      "title": null,
+      "imagensNoSite": 0,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": 0,
+      "encontradoNoSite": false
+    },
+    {
+      "ean": "3560231666743",
+      "id": "450833",
+      "title": null,
+      "imagensNoSite": 0,
+      "imagensNaKeepeek": 15,
+      "imagensNoSiteUrls": [],
+      "imagensNaKeepeekUrls": [
+        "https://jja.dam-broadcast.com/medias/domain11509/media109511/2853486-7750ql9xxq-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108266/2479854-rlei5r1hqn-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105592/1677886-bren4kt10p-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105993/1798069-uvnltcqh57-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795828-41ipavflmd-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795831-mi1jvjqqpq-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795834-em8cueekqh-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795837-k4oujj829t-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795840-rwg83ackn6-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795843-3b27dre4ys-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795846-ds5jacp5kf-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105986/1795849-y6egpk6lyy-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108397/2519299-x0yv8ex5y5-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media107847/2354359-kr45s7o524-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
+      ],
+      "diferenca": 15,
+      "encontradoNoSite": false
+    },
+    {
+      "ean": "3560233834263",
+      "id": "453668",
+      "title": null,
+      "imagensNoSite": 0,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": 0,
+      "encontradoNoSite": false
+    },
+    {
+      "ean": "3560231728274",
+      "id": "454176",
       "title": null,
       "imagensNoSite": 0,
       "imagensNaKeepeek": 0,
@@ -67,6 +116,22 @@
       "encontradoNoSite": true
     },
     {
+      "ean": "3560238674819",
+      "id": "453666",
+      "title": "Cadeira com braços ESSIO noisette e branco",
+      "imagensNoSite": 4,
+      "imagensNaKeepeek": 0,
+      "imagensNoSiteUrls": [
+        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_1.jpg",
+        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_2.jpg",
+        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_3.jpg",
+        "https://homastore.online/images/products/453666_cadeira_com_bracos_essio_noisette_e_branco_homa_4.jpg"
+      ],
+      "imagensNaKeepeekUrls": [],
+      "diferenca": -4,
+      "encontradoNoSite": true
+    },
+    {
       "ean": "3560235598163",
       "id": "447146",
       "title": "Conjunto de jardim ÉVASION cinza escuro",
@@ -115,6 +180,36 @@
         "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
       ],
       "diferenca": 8,
+      "encontradoNoSite": true
+    },
+    {
+      "ean": "3560231729257",
+      "id": "454177",
+      "title": "Mesa de apoio ALLURE branco em alumínio",
+      "imagensNoSite": 5,
+      "imagensNaKeepeek": 12,
+      "imagensNoSiteUrls": [
+        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_1.jpg",
+        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_2.jpg",
+        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_3.jpg",
+        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_4.jpg",
+        "https://homastore.online/images/products/454177_mesa_de_apoio_allure_branco_em_aluminio_homa_5.jpg"
+      ],
+      "imagensNaKeepeekUrls": [
+        "https://jja.dam-broadcast.com/medias/domain11509/media109512/2853612-yccya07mif-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105467/1640152-bq2cx8897h-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106036/1810813-k5jm7ajnfl-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media107876/2363023-k699g8hdkh-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788541-4xtro3aq8s-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788523-nu91btt7yu-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788526-tv4kb47oci-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788529-unuc3tb8we-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788532-kwb5em94dr-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788535-aafivscobf-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media105961/1788538-ne7k9rj4jn-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
+      ],
+      "diferenca": 7,
       "encontradoNoSite": true
     },
     {
