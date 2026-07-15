@@ -28,6 +28,15 @@ jobs:
         run: npm ci
       - name: Instalar Chromium (Playwright)
         run: npx playwright install --with-deps chromium
+      - name: Diagnostico do feed SFCC
+        env:
+          SFCC_FEED_URL: ${{ secrets.SFCC_FEED_URL }}
+        run: |
+          curl -s -o /tmp/resposta.xml -w "STATUS_HTTP: %{http_code}\n" -D /tmp/headers.txt "$SFCC_FEED_URL"
+          echo "--- HEADERS ---"
+          cat /tmp/headers.txt
+          echo "--- PRIMEIROS 500 CARACTERES DO CORPO ---"
+          head -c 500 /tmp/resposta.xml
       - name: Verificar os EAN indicados
         env:
           SFCC_FEED_URL: ${{ secrets.SFCC_FEED_URL }}
