@@ -32,11 +32,16 @@ jobs:
         env:
           SFCC_FEED_URL: ${{ secrets.SFCC_FEED_URL }}
         run: |
-          curl -s -o /tmp/resposta.xml -w "STATUS_HTTP: %{http_code}\n" -D /tmp/headers.txt "$SFCC_FEED_URL"
-          echo "--- HEADERS ---"
-          cat /tmp/headers.txt
-          echo "--- PRIMEIROS 500 CARACTERES DO CORPO ---"
-          head -c 500 /tmp/resposta.xml
+          node -e "
+          fetch(process.env.SFCC_FEED_URL).then(async (res) => {
+            console.log('STATUS:', res.status);
+            console.log('HEADERS:');
+            for (const [k, v] of res.headers.entries()) console.log(' ' + k + ': ' + v);
+            const texto = await res.text();
+            console.log('CORPO (primeiros 1000 caracteres):');
+            console.log(texto.slice(0, 1000));
+          }).catch((err) => console.log('ERRO:', err.message));
+          "
       - name: Verificar os EAN indicados
         env:
           SFCC_FEED_URL: ${{ secrets.SFCC_FEED_URL }}
