@@ -49,6 +49,7 @@ export async function fetchSfccProducts() {
     productsById[String(id)] = {
       id: String(id),
       title: item['g:title'] || item.title || '',
+      link: item['link'] || item.link || null,
       images: extractImages(item),
     };
   }

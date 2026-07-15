@@ -1,7 +1,7 @@
 // scripts/build-report.js
-// Junta produtos do site (por Cód. Art.) com imagens da Keepeek e da
-// EasyRE@ (ambas por EAN), guardando os URLs das três fontes para
-// pré-visualização no dashboard.
+// Junta imagens do site, da Keepeek e da EasyRE@ (todas por EAN, exceto
+// o site que usa o link do feed apenas para navegar ate a ficha).
+
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 
@@ -15,8 +15,10 @@ async function readJson(filePath, fallback) {
 }
 
 export async function buildReport({ eans, eanToId, productsById }) {
+  const siteImages = await readJson(path.resolve('state/site-images.json'), {});
   const keepeekImages = await readJson(path.resolve('state/keepeek-images.json'), {});
   const easyreaImages = await readJson(path.resolve('state/easyrea-images.json'), {});
+
   const existing = await readJson(path.resolve('public/data/produtos.json'), {
     updatedAt: null,
     products: [],
@@ -27,7 +29,7 @@ export async function buildReport({ eans, eanToId, productsById }) {
   for (const ean of eans) {
     const id = eanToId[ean];
     const siteProduct = productsById[id];
-    const siteImages = siteProduct?.images || [];
+    const siteImagesForEan = siteImages[ean] || [];
     const keepeekImagesForEan = keepeekImages[ean] || [];
     const easyreaImagesForEan = easyreaImages[ean] || [];
 
@@ -35,14 +37,14 @@ export async function buildReport({ eans, eanToId, productsById }) {
       ean,
       id: id || null,
       title: siteProduct?.title || null,
-      imagensNoSite: siteImages.length,
+      imagensNoSite: siteImagesForEan.length,
       imagensNaKeepeek: keepeekImagesForEan.length,
       imagensNaEasyrea: easyreaImagesForEan.length,
-      imagensNoSiteUrls: siteImages,
+      imagensNoSiteUrls: siteImagesForEan,
       imagensNaKeepeekUrls: keepeekImagesForEan,
       imagensNaEasyreaUrls: easyreaImagesForEan,
-      diferenca: keepeekImagesForEan.length - siteImages.length,
-      encontradoNoSite: Boolean(siteProduct),
+      diferenca: keepeekImagesForEan.length - siteImagesForEan.length,
+      encontradoNoSite: Boolean(siteProduct?.link),
     });
   }
 
@@ -55,6 +57,5 @@ export async function buildReport({ eans, eanToId, productsById }) {
 
   await mkdir(path.resolve('public/data'), { recursive: true });
   await writeFile(path.resolve('public/data/produtos.json'), JSON.stringify(report, null, 2));
-
   return report;
 }

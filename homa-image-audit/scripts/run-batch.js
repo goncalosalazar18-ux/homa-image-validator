@@ -4,6 +4,7 @@ import { readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { config, assertRuntimeConfig } from './lib/config.js';
 import { fetchSfccProducts } from './fetch-sfcc-products.js';
+import { fetchSiteImages } from './site-scraper.js';
 import { fetchKeepeekImages } from './keepeek-scraper.js';
 import { fetchEasyreaImages } from './easyrea-scraper.js';
 import { buildReport } from './build-report.js';
@@ -25,6 +26,7 @@ async function readJson(filePath, fallback) {
 
 async function run() {
   assertRuntimeConfig();
+
   await mkdir(path.resolve('state'), { recursive: true });
 
   const eans = parseEanList(process.env.EAN_LIST);
@@ -48,8 +50,33 @@ async function run() {
     console.warn(`Aviso: estes EAN não estão no mapa produto/EAN: ${semMapa.join(', ')}`);
   }
 
-  console.log('A ir buscar o catálogo ao feed SFCC...');
+  console.log('A ir buscar o catálogo ao feed SFCC (so para saber o link de cada produto)...');
   const productsById = await fetchSfccProducts();
+
+  const entradasSite = wanted
+    .map((ean) => {
+      const id = eanToId[ean];
+      const link = productsById[id]?.link;
+      return link ? { ean, url: link } : null;
+    })
+    .filter(Boolean);
+
+  const semLink = wanted.filter((ean) => {
+    const id = eanToId[ean];
+    return !productsById[id]?.link;
+  });
+  if (semLink.length > 0) {
+    console.warn(`Aviso: estes EAN nao tem link no feed (produto descontinuado?): ${semLink.join(', ')}`);
+  }
+
+  console.log('A visitar as fichas de produto no site...');
+  const { results: siteResults, errors: siteErrors } = await fetchSiteImages(entradasSite);
+  for (const [ean, message] of Object.entries(siteErrors)) {
+    console.warn(`Erro no site para ${ean}: ${message}`);
+  }
+  const siteImages = await readJson(path.resolve('state/site-images.json'), {});
+  Object.assign(siteImages, siteResults);
+  await writeFile(path.resolve('state/site-images.json'), JSON.stringify(siteImages, null, 2));
 
   console.log('A pesquisar imagens na Keepeek...');
   const { results: keepeekResults, errors: keepeekErrors } = await fetchKeepeekImages(wanted);
