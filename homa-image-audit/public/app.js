@@ -89,6 +89,58 @@ function attachImageFallbacks(container) {
   });
 }
 
+async function downloadImagesForEan(ean) {
+  const product = state.products.find((p) => p.ean === ean);
+  if (!product) return;
+  const urls = [
+    ...(product.imagensNoSiteUrls || []),
+    ...(product.imagensNaKeepeekUrls || []),
+    ...(product.imagensNaEasyreaUrls || []),
+  ];
+  if (urls.length === 0) {
+    alert('Nao ha imagens para descarregar neste produto.');
+    return;
+  }
+  const zip = new JSZip();
+  const falhadas = [];
+  let sucessos = 0;
+  for (let i = 0; i < urls.length; i++) {
+    const url = urls[i];
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const blob = await res.blob();
+      const nomeFicheiro = url.split('/').pop().split('?')[0] || `imagem-${i + 1}.jpg`;
+      zip.file(`${i + 1}-${nomeFicheiro}`, blob);
+      sucessos++;
+    } catch (err) {
+      falhadas.push(url);
+    }
+  }
+  if (sucessos === 0) {
+    alert(
+      'Nao foi possivel descarregar nenhuma imagem diretamente (bloqueio de CORS dos servidores). ' +
+      'Vou abrir as imagens em separadores novos para as poderes guardar manualmente.'
+    );
+    urls.forEach((url) => window.open(url, '_blank', 'noopener'));
+    return;
+  }
+  const conteudo = await zip.generateAsync({ type: 'blob' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(conteudo);
+  link.download = `${ean}-imagens.zip`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  if (falhadas.length > 0) {
+    alert(
+      `Descarregadas ${sucessos} de ${urls.length} imagens. ` +
+      `${falhadas.length} falharam e foram abertas em separadores novos.`
+    );
+    falhadas.forEach((url) => window.open(url, '_blank', 'noopener'));
+  }
+}
+
 function updateDeleteButton() {
   const button = document.getElementById('delete-selected');
   const count = state.selectedEans.size;
@@ -131,7 +183,10 @@ function render() {
         <td>${galleryCell(p.imagensNaKeepeekUrls)}</td>
         <td>${galleryCell(p.imagensNaEasyreaUrls)}</td>
         <td>${estadoBadge(p)}</td>
-        <td><button class="btn-delete-row" data-ean="${p.ean}" title="Eliminar esta consulta">✕</button></td>
+        <td>
+          <button class="btn-download-row" data-ean="${p.ean}" title="Descarregar todas as imagens desta linha">⬇</button>
+          <button class="btn-delete-row" data-ean="${p.ean}" title="Eliminar esta consulta">✕</button>
+        </td>
       </tr>`
     )
     .join('');
@@ -147,6 +202,12 @@ function render() {
         state.selectedEans.delete(ean);
       }
       updateDeleteButton();
+    });
+  });
+
+  body.querySelectorAll('.btn-download-row').forEach((button) => {
+    button.addEventListener('click', () => {
+      downloadImagesForEan(button.dataset.ean);
     });
   });
 

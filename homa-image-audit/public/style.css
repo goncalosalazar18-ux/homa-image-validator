@@ -333,3 +333,18 @@ main {
   background: var(--homa-danger-bg);
   color: var(--homa-danger);
 }
+
+.btn-download-row {
+  background: none;
+  border: none;
+  color: var(--homa-text-secondary);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn-download-row:hover {
+  background: var(--homa-brand-light);
+  color: var(--homa-text-primary);
+}

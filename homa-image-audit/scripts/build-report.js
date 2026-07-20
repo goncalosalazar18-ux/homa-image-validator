@@ -35,6 +35,7 @@ export async function buildReport({ eans, eanToId, productsById }) {
 
     existingByEan.set(ean, {
       ean,
+      verificadoEm: new Date().toISOString(),
       id: id || null,
       title: siteProduct?.title || null,
       imagensNoSite: siteImagesForEan.length,
@@ -51,7 +52,7 @@ export async function buildReport({ eans, eanToId, productsById }) {
   const report = {
     updatedAt: new Date().toISOString(),
     products: [...existingByEan.values()].sort((a, b) =>
-      (a.title || '').localeCompare(b.title || '')
+      (b.verificadoEm || '').localeCompare(a.verificadoEm || '')
     ),
   };
 
