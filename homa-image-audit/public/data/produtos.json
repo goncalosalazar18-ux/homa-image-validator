@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-07-17T10:11:50.211Z",
+  "updatedAt": "2026-07-21T08:55:21.587Z",
   "products": [
+    {
+      "ean": "5602342207090",
+      "verificadoEm": "2026-07-21T08:55:21.587Z",
+      "id": "470774",
+      "title": null,
+      "imagensNoSite": 0,
+      "imagensNaKeepeek": 0,
+      "imagensNaEasyrea": 0,
+      "imagensNoSiteUrls": [],
+      "imagensNaKeepeekUrls": [],
+      "imagensNaEasyreaUrls": [],
+      "diferenca": 0,
+      "encontradoNoSite": false
+    },
     {
       "ean": "5602342202453",
       "id": "469486",
@@ -17,19 +31,6 @@
     {
       "ean": "5602342202439",
       "id": "469490",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "5602342207090",
-      "id": "470774",
       "title": null,
       "imagensNoSite": 0,
       "imagensNaKeepeek": 0,
