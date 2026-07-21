@@ -1,6 +1,59 @@
 {
-  "updatedAt": "2026-07-21T09:54:18.786Z",
+  "updatedAt": "2026-07-21T11:23:44.526Z",
   "products": [
+    {
+      "ean": "3560231157593",
+      "verificadoEm": "2026-07-21T11:23:44.525Z",
+      "id": "473551",
+      "title": "Sofá SOLKA tecido verde com chaise longue",
+      "imagensNoSite": 7,
+      "imagensNaKeepeek": 19,
+      "imagensNaEasyrea": 10,
+      "imagensNoSiteUrls": [
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwd0bb937a/images/large/473551_sofa_solka_tecido_verde_com_chaise_longue_homa_6.jpg",
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw5a6c2df5/images/large/473551_sofa_solka_tecido_verde_com_chaise_longue_homa_1.jpg",
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw15634b0f/images/large/473551_sofa_solka_tecido_verde_com_chaise_longue_homa_2.jpg",
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwe4e40572/images/large/473551_sofa_solka_tecido_verde_com_chaise_longue_homa_3.jpg",
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw9fafc3d5/images/large/473551_sofa_solka_tecido_verde_com_chaise_longue_homa_4.jpg",
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw26d2c6f0/images/large/473551_sofa_solka_tecido_verde_com_chaise_longue_homa_5.jpg",
+        "https://www.homa.pt/on/demandware.static/Sites-homa-Site/-/default/dwfe46f8aa/images/play.jpg"
+      ],
+      "imagensNaKeepeekUrls": [
+        "https://jja.dam-broadcast.com/medias/domain11509/media110012/3003732-fpdyk8ai0u-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media109449/2834772-19fmrnjhbg-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media109289/2786850-im6goq7oj7-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614194-osgxoavyew-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614197-tl4l4iu5ka-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108714/2614200-99jnts1whj-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614188-kyt2pgg3gy-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614191-mi5di60glc-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108562/2568873-jkt34byh4d-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108555/2566722-7js6gm826d-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108556/2566869-qmhg3l0nor-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108556/2567049-bf15uqcmvb-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108557/2567190-3nj5g356ch-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108573/2571927-wiebx3am81-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108574/2572449-hnly3ku0a2-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108700/2610165-r6oamvyq8w-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108701/2610408-24a5g5adrv-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media109991/2997585-hkjk1r1ojb-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
+      ],
+      "imagensNaEasyreaUrls": [
+        "https://media.jja-sa.com/214247C/2fa8550c-8a81-4adb-b19c-dfbe691270a1.jpg",
+        "https://media.jja-sa.com/214247C/8ea82fa0-3dd3-45db-a831-c59f0396966f.jpg",
+        "https://media.jja-sa.com/214247C/6cebc776-e490-49cd-bc5a-8d0da2becf8f.jpg",
+        "https://media.jja-sa.com/214247C/12d70a7d-fed6-453d-b0fb-e39b10d0fcc9.jpg",
+        "https://media.jja-sa.com/214247C/a20a62c9-f1ab-42e2-8389-04e6b24be1ba.jpg",
+        "https://media.jja-sa.com/214247C/303fa194-426d-482a-879c-7e3aa7fc09e5.jpg",
+        "https://media.jja-sa.com/214247C/471b6734-dfa1-4017-aef7-3e2a77739ca9.jpg",
+        "https://media.jja-sa.com/214247C/82cc6f37-6f96-4817-94b1-cac14454e7e0.jpg",
+        "https://media.jja-sa.com/214247C/8a64a18e-4008-4973-b849-96900d873ed6.jpg",
+        "https://media.jja-sa.com/214247C/084df63b-31a3-4316-9eea-a6bc914e5b13.jpg"
+      ],
+      "diferenca": 12,
+      "encontradoNoSite": true
+    },
     {
       "ean": "5602342176150",
       "verificadoEm": "2026-07-21T09:54:18.786Z",
@@ -121,42 +174,6 @@
       "imagensNaKeepeekUrls": [],
       "imagensNaEasyreaUrls": [],
       "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560231157593",
-      "id": "473551",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 19,
-      "imagensNaEasyrea": 2,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media110012/3003732-fpdyk8ai0u-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109449/2834772-19fmrnjhbg-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109289/2786850-im6goq7oj7-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614194-osgxoavyew-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614197-tl4l4iu5ka-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108714/2614200-99jnts1whj-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614188-kyt2pgg3gy-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108713/2614191-mi5di60glc-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108562/2568873-jkt34byh4d-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108555/2566722-7js6gm826d-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108556/2566869-qmhg3l0nor-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108556/2567049-bf15uqcmvb-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108557/2567190-3nj5g356ch-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108573/2571927-wiebx3am81-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108574/2572449-hnly3ku0a2-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108700/2610165-r6oamvyq8w-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108701/2610408-24a5g5adrv-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109991/2997585-hkjk1r1ojb-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/214247C/2fa8550c-8a81-4adb-b19c-dfbe691270a1.jpg",
-        "https://media.jja-sa.com/214247C/8ea82fa0-3dd3-45db-a831-c59f0396966f.jpg"
-      ],
-      "diferenca": 19,
       "encontradoNoSite": false
     },
     {
