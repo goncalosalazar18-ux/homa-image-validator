@@ -1,6 +1,37 @@
 {
-  "updatedAt": "2026-07-22T11:11:12.794Z",
+  "updatedAt": "2026-07-23T09:24:17.280Z",
   "products": [
+    {
+      "ean": "3560232779008",
+      "verificadoEm": "2026-07-23T09:24:17.280Z",
+      "id": "456564",
+      "title": "Cadeira empilhável preta",
+      "imagensNoSite": 2,
+      "imagensNaKeepeek": 10,
+      "imagensNaEasyrea": 2,
+      "imagensNoSiteUrls": [
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwe371f503/images/large/456564_cadeira_empilhavel_preta_homa_2.jpg",
+        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwf41a40a0/images/large/456564_cadeira_empilhavel_preta_homa_1.jpg"
+      ],
+      "imagensNaKeepeekUrls": [
+        "https://jja.dam-broadcast.com/medias/domain11509/media106594/1978350-fvwm47r2os-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106929/2078811-ubnmtsd1pu-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106946/2084022-vicijru9bg-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106626/1988064-gvjhni1q8d-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106627/1988133-na812g0rjr-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106627/1988199-hpj9s79poc-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media107293/2188133-x0f0ke87j8-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media106594/1978353-9i2318uw2j-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media107515/2254684-rs1yu3tvpo-xlarge.jpg",
+        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
+      ],
+      "imagensNaEasyreaUrls": [
+        "https://media.jja-sa.com/193556/5043e03f-3292-44c7-a093-a2e7b70b710e.jpg",
+        "https://media.jja-sa.com/193556/86c1d6f0-4b41-471a-a618-0647638a02c0.jpg"
+      ],
+      "diferenca": 8,
+      "encontradoNoSite": true
+    },
     {
       "ean": "3560231020187",
       "verificadoEm": "2026-07-22T11:11:12.524Z",
