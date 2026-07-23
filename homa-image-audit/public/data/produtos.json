@@ -83,109 +83,6 @@
       "encontradoNoSite": true
     },
     {
-      "ean": "5602342207090",
-      "verificadoEm": "2026-07-21T08:55:21.587Z",
-      "id": "470774",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "5602342202453",
-      "id": "469486",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "5602342202439",
-      "id": "469490",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560233507280",
-      "id": "465267",
-      "title": null,
-      "imagensNoSite": 5,
-      "imagensNaKeepeek": 15,
-      "imagensNaEasyrea": 1,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw1fb3facb/images/large/465267_cadeira_raven_em_tecido_bege_homa_5.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw86031f44/images/large/465267_cadeira_raven_em_tecido_bege_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw4fbb6fd6/images/large/465267_cadeira_raven_em_tecido_bege_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwcf54119d/images/large/465267_cadeira_raven_em_tecido_bege_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw15f9cf7e/images/large/465267_cadeira_raven_em_tecido_bege_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media108471/2541376-molgamy2eo-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107573/2272090-ob8s18wx78-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107807/2342173-enory6vvub-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107796/2339083-3oakuj2n2l-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107796/2339086-u2lamj7xeu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107807/2342176-k7s01v85q1-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107517/2255374-vr6hnwefo6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107518/2255446-v609aeccpy-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107567/2270323-c5e729q191-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107567/2270347-n72ejg0tar-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107568/2270449-vcwk57a389-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107568/2270653-o0pilh4q0l-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107569/2270746-3sm3hq7lxm-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109832/2949741-l74c3aqwqp-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/207301A/55cc454c-fc9d-4cf8-89e6-a930564c75b3.jpg"
-      ],
-      "diferenca": 10,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "5602342202491",
-      "id": "469518",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560232544026",
-      "id": "463273",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
-      "encontradoNoSite": false
-    },
-    {
       "ean": "3560231157593",
       "id": "473551",
       "title": null,
@@ -323,19 +220,6 @@
         "https://media.jja-sa.com/210354/a614deba-2705-47be-901d-961fbf0fd7e7.jpg"
       ],
       "diferenca": 22,
-      "encontradoNoSite": false
-    },
-    {
-      "ean": "3560233812568",
-      "id": "440033",
-      "title": null,
-      "imagensNoSite": 0,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": 0,
       "encontradoNoSite": false
     },
     {
@@ -702,25 +586,6 @@
       "encontradoNoSite": true
     },
     {
-      "ean": "5602342196578",
-      "id": "465139",
-      "title": "Aparador RAWA bege",
-      "imagensNoSite": 5,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw4f3b4c35/images/large/465139_aparador_rawa_bege_homa_5.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw8a664bdf/images/large/465139_aparador_rawa_bege_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwc80bac4b/images/large/465139_aparador_rawa_bege_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw87567972/images/large/465139_aparador_rawa_bege_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw45cdba6a/images/large/465139_aparador_rawa_bege_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": -5,
-      "encontradoNoSite": true
-    },
-    {
       "ean": "3560231642778",
       "id": "449410",
       "title": "Banqueta branca AURORA com arrumação",
@@ -827,44 +692,6 @@
         "https://media.jja-sa.com/207380/e8672d33-4c7f-484d-a7bb-101db7350d30.jpg"
       ],
       "diferenca": 9,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560237589831",
-      "id": "445577",
-      "title": "Cabide WILD castanho em mdf 178cm",
-      "imagensNoSite": 3,
-      "imagensNaKeepeek": 14,
-      "imagensNaEasyrea": 5,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw32531678/images/large/445577_cabide_wild_castanho_em_mdf_178cm_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw17a66be8/images/large/445577_cabide_wild_castanho_em_mdf_178cm_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw7a938a4a/images/large/445577_cabide_wild_castanho_em_mdf_178cm_homa_2.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media107784/2335201-nf2942swr7-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107786/2335930-kwqb1320g5-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107786/2336017-9tskil5qnf-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107787/2336161-2n8sq4f85w-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107788/2336404-ruw73cbehf-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107788/2336566-1bk3icasv0-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106068/1820446-abxkbrueqw-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106596/1978860-x4fnoo0irq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105860/1758010-1shscmg2pv-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107845/2353687-56k9j7nd83-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media881/454348-3l38jfh4gh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media3001/454351-rp9xkd0nbf-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107722/2316757-v4ql3ceilx-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/182271/c8c27445-0e65-49bc-a1f5-52b1b68804c1.jpg",
-        "https://media.jja-sa.com/182271/7794e96a-dde2-45e4-b4eb-9c0a6106f57d.jpg",
-        "https://media.jja-sa.com/182271/46d0ce0a-b5a3-460f-ad02-2ed690283e7e.jpg",
-        "https://media.jja-sa.com/182271/c5d34998-4e4c-4720-a67c-172eb206e177.jpg",
-        "https://media.jja-sa.com/182271/52220e60-a7ec-460d-a9e8-71528f610dfc.jpg"
-      ],
-      "diferenca": 11,
       "encontradoNoSite": true
     },
     {
@@ -1020,73 +847,6 @@
       "imagensNaEasyreaUrls": [
         "https://media.jja-sa.com/197323B/5513a074-add1-44e4-b4db-153a6638ae96.jpg",
         "https://media.jja-sa.com/197323B/077cb7d0-49c9-475a-bacc-2a4930703a7a.jpg"
-      ],
-      "diferenca": 33,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560231550226",
-      "id": "457952",
-      "title": "Cadeira em tecido bege celeste",
-      "imagensNoSite": 5,
-      "imagensNaKeepeek": 38,
-      "imagensNaEasyrea": 8,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwf27f6f9a/images/large/457952_cadeira_em_tecido_bege_celeste_homa_5.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwf8335317/images/large/457952_cadeira_em_tecido_bege_celeste_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw6c82d65e/images/large/457952_cadeira_em_tecido_bege_celeste_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw398a69ca/images/large/457952_cadeira_em_tecido_bege_celeste_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw1297a439/images/large/457952_cadeira_em_tecido_bege_celeste_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819541-gl8pyyijit-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819643-d4agnp2qtu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109399/2819820-mfeharfxkn-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820066-iq1unq1fnq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820120-fcifncewwm-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820156-wgv0sw3a83-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819508-ggch7bsjfm-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819688-3683uy4btp-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109399/2819736-m4x03ohsqi-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820069-j77q1nyj0x-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109399/2819712-4na2xri705-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820063-ljqq1scfa9-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820072-hpqomi4745-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820132-r65iqbswy6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819577-vabkd02du9-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819640-80e0vapo3w-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820216-isd31fno6w-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820279-tefr7qu9gw-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109398/2819565-vybwjgu7bn-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109399/2819754-ggpqd2l0nw-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820024-g6sgmq1hey-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109401/2820312-7i5h7dkebv-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109399/2819805-trto5u6j1s-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109400/2820252-2thj2l819h-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109401/2820393-22637os9yo-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108486/2546094-bn9kk7dwhb-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107846/2353834-376ucbxmgi-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105922/1776622-ixlmfipiui-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107797/2339182-jw5ck22e21-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106596/1979010-i2w4009xhm-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105829/1748956-qxw9jx13ub-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media104813/1443916-3vm6ky9rda-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media104872/1461826-87k79j6203-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media104813/1443919-uvda1xi5jn-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media104813/1443913-69yqkidao1-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media104813/1443922-djk6b1dvaf-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107704/2311390-4e55n0vlro-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/184913A/45b70695-3baa-47da-8061-c4bbe5b84d06.jpg",
-        "https://media.jja-sa.com/184913A/fcd76c99-abeb-4b1d-9876-aeb8e8628205.jpg",
-        "https://media.jja-sa.com/184913A/af2ec04a-62ad-414d-bd39-1c82901900aa.jpg",
-        "https://media.jja-sa.com/184913A/64f3a691-f9c6-4eaf-b341-0e42fbe77fc7.jpg",
-        "https://media.jja-sa.com/184913A/fcfc0ae1-4c28-4b15-a7d8-743a34ff7bf7.jpg",
-        "https://media.jja-sa.com/184913A/b4386a0b-aa42-4df5-99c6-63a4efab47f7.jpg",
-        "https://media.jja-sa.com/184913A/7b8226ab-9407-4e04-9cf5-df88b67529f3.jpg",
-        "https://media.jja-sa.com/184913A/01fb544e-b0c6-43d9-87fb-5cc4492b27a4.jpg"
       ],
       "diferenca": 33,
       "encontradoNoSite": true
@@ -1292,42 +1052,6 @@
       "imagensNaKeepeekUrls": [],
       "imagensNaEasyreaUrls": [],
       "diferenca": -1,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560231041885",
-      "id": "469952",
-      "title": "Cadeira SIRAC em tecido bege",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 14,
-      "imagensNaEasyrea": 2,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw0e2799e0/images/large/469952_cadeira_sirac_em_tecido_bege_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwb9968d49/images/large/469952_cadeira_sirac_em_tecido_bege_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw182c8942/images/large/469952_cadeira_sirac_em_tecido_bege_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw9bda2255/images/large/469952_cadeira_sirac_em_tecido_bege_homa_3.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media108651/2595576-8l22t6s95t-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108651/2595573-1tese7g200-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108651/2595570-nto4cekfvx-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108651/2595567-68pp28dj4l-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108562/2568810-qfluk7ajbh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108555/2566716-pts228poju-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108556/2566857-y9bwa6a5i5-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108556/2566872-wh99oj1rly-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108557/2567130-8xkh2irqph-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108557/2567307-c3l0qtb9n4-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108557/2567334-hao147gdoq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108557/2567337-ago93dq87h-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109806/2942088-7glduvjxqw-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/214202A/48bfdd37-97c7-4bc1-80e9-68895ce45521.jpg",
-        "https://media.jja-sa.com/214202A/77be0fb5-f3c4-46d3-a246-eae61bc86ecb.jpg"
-      ],
-      "diferenca": 10,
       "encontradoNoSite": true
     },
     {
@@ -1994,38 +1718,6 @@
       "encontradoNoSite": true
     },
     {
-      "ean": "3560232960024",
-      "id": "462971",
-      "title": "Espelho alto KIM com suporte 180cm",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 8,
-      "imagensNaEasyrea": 4,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw6bd2312d/images/large/462971_espelho_alto_kim_com_suporte_180cm_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwa46e13be/images/large/462971_espelho_alto_kim_com_suporte_180cm_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw819aaa6d/images/large/462971_espelho_alto_kim_com_suporte_180cm_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw35d5b61c/images/large/462971_espelho_alto_kim_com_suporte_180cm_homa_3.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media108302/2490739-ei2q8ogydi-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107012/2103855-ag33romrwg-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107009/2102979-ai0qtxusym-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107010/2103147-ydqvhmqof9-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107011/2103354-eur8etd58i-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107012/2103606-wdkl2ocg9q-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107672/2301601-wj4vlj4ru6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/203591/e3cf688a-27ec-483d-80f6-3503ebf7a5b6.jpg",
-        "https://media.jja-sa.com/203591/e2afc3a2-bc3c-4c1a-94c3-e97ed7c6ab97.jpg",
-        "https://media.jja-sa.com/203591/8184f5e8-2a4a-42ea-9c19-265e87614e4d.jpg",
-        "https://media.jja-sa.com/203591/b26133cd-26b8-48cb-a560-f65295847a9c.jpg"
-      ],
-      "diferenca": 4,
-      "encontradoNoSite": true
-    },
-    {
       "ean": "3560237553610",
       "id": "444710",
       "title": "Espelho de chão EDI dourado 160cm",
@@ -2225,89 +1917,6 @@
         "https://media.jja-sa.com/157206E/3b7dff73-1be2-4623-935d-5b8aa0ce886f.jpg"
       ],
       "diferenca": 8,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "5602342196462",
-      "id": "465090",
-      "title": "Mesa de jantar ALBITA castanha em mdf 120cm",
-      "imagensNoSite": 1,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwf09ab800/images/large/465090_mesa_de_jantar_albita_castanha_em_mdf_120cm_homa_1.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": -1,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560232778926",
-      "id": "456260",
-      "title": "Mesa de jantar ALIAJ extensível em mdf e metal",
-      "imagensNoSite": 7,
-      "imagensNaKeepeek": 33,
-      "imagensNaEasyrea": 12,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwa60a3d7f/images/large/456260_mesa_de_jantar_aliaj_extensivel_em_mdf_e_metal_homa_6.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw7819c787/images/large/456260_mesa_de_jantar_aliaj_extensivel_em_mdf_e_metal_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw3c8c3b9e/images/large/456260_mesa_de_jantar_aliaj_extensivel_em_mdf_e_metal_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw7e257f14/images/large/456260_mesa_de_jantar_aliaj_extensivel_em_mdf_e_metal_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw158abaea/images/large/456260_mesa_de_jantar_aliaj_extensivel_em_mdf_e_metal_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwe8d113f3/images/large/456260_mesa_de_jantar_aliaj_extensivel_em_mdf_e_metal_homa_5.jpg",
-        "https://www.homa.pt/on/demandware.static/Sites-homa-Site/-/default/dwfe46f8aa/images/play.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media108120/2436280-7rpus1tcof-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108059/2417956-bwmybwootr-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108060/2418187-r9jcc7u9gh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108060/2418262-w99h4ix7uu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108061/2418316-nq1bedg2ws-large.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108030/2409295-j72vnp59la-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106730/2019255-tjwnfflixt-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106730/2019252-co6noisgl8-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106730/2019129-i4yvhx4bc5-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106735/2020575-igxs052a5x-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106735/2020578-nf8ngn3b8d-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107159/2147888-gh1mfljrj6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107159/2147882-qxt7rwksey-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107159/2147885-o44hhntngo-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106929/2078808-9937imj2fu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106665/1999569-9mfiy7xmea-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106695/2008515-6l096ob0x6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106662/1998858-pkrfx332aw-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106662/1998882-7b4un8s1ao-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106663/1998942-xeehvqhilo-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106663/1999017-ybi1g2k3v6-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106663/1999062-e7x5xs9f04-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106663/1999071-67hi09xjl3-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106663/1999170-8devskbruq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106664/1999353-xws0ortsxt-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106664/1999458-6phi6qk4jk-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106664/1999473-o6eqkuah6e-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106665/1999530-twapbog30q-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107293/2188130-twneeq0va8-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106935/2080761-0qsfh56tp9-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106935/2080764-7ovwgfo2yi-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106935/2080767-wa6cgacu41-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/193553/4f95f0e8-f1a3-4dcb-afb3-7b5ac242154f.jpg",
-        "https://media.jja-sa.com/193553/c7e0e5b3-ce80-4c1d-b831-4fb528c214cf.jpg",
-        "https://media.jja-sa.com/193553/102413da-454f-4336-80ab-9ae5ad62d755.jpg",
-        "https://media.jja-sa.com/193553/613ee9a5-3da2-4641-bace-7d6b03b8b866.jpg",
-        "https://media.jja-sa.com/193553/bd8045ef-4f8b-4828-bbc8-010f38b7b8f5.jpg",
-        "https://media.jja-sa.com/193553/24069883-35a9-47d0-a4f2-b607c36052d8.jpg",
-        "https://media.jja-sa.com/193553/d9720841-3793-4fd8-9f4a-69954dd010b8.jpg",
-        "https://media.jja-sa.com/193553/2c872635-d08e-4925-9216-e8606cc78c2d.jpg",
-        "https://media.jja-sa.com/193553/43de0421-c2ca-486f-b9bb-65547f9a08b2.jpg",
-        "https://media.jja-sa.com/193553/352bfc3d-bc78-4d5b-8d7a-7720ad58da58.jpg",
-        "https://media.jja-sa.com/193553/91b70ca4-7e26-4a72-8c29-b5fca40cf4ff.jpg",
-        "https://media.jja-sa.com/193553/26e13706-fbbc-4cf5-a538-52c3654992cd.jpg"
-      ],
-      "diferenca": 26,
       "encontradoNoSite": true
     },
     {
@@ -2563,68 +2172,6 @@
       "encontradoNoSite": true
     },
     {
-      "ean": "3560231638757",
-      "id": "451171",
-      "title": "Mesa de jantar SABOR extensível castanha em madeira acácia",
-      "imagensNoSite": 6,
-      "imagensNaKeepeek": 39,
-      "imagensNaEasyrea": 1,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw876a1965/images/large/451171_mesa_de_jantar_sabor_extensivel_castanha_em_madeira_acacia_homa_6.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw3d675737/images/large/451171_mesa_de_jantar_sabor_extensivel_castanha_em_madeira_acacia_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw87bef270/images/large/451171_mesa_de_jantar_sabor_extensivel_castanha_em_madeira_acacia_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw338a9e5a/images/large/451171_mesa_de_jantar_sabor_extensivel_castanha_em_madeira_acacia_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw26555c30/images/large/451171_mesa_de_jantar_sabor_extensivel_castanha_em_madeira_acacia_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw81ff3d1e/images/large/451171_mesa_de_jantar_sabor_extensivel_castanha_em_madeira_acacia_homa_5.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2674986-ay9um5yn5d-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2674962-yp74yxnyu8-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2674998-d723bjbwls-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675364-8tk7xkknuu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675415-sodswu8r3f-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2674968-ppmoke1o9o-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2675082-f4yti33ayu-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675100-br7dn88ngl-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675457-mm7ovir76r-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675466-134jnw5srp-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675556-4f45pp6pnb-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2675058-8o6ydkuokq-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675229-ocahxbj7o5-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675256-rv0ixou3ro-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675322-l7tlha3b8u-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675427-35smu2imd1-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675535-o2fiyuxkij-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675235-gf5lwf8ebh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675247-w5kmt3yvkt-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675319-wbpdnhrslo-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2675022-v5ltsdyk9m-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108916/2675034-jurm03c71i-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108917/2675385-92mm2toyb9-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675424-abisngfdd1-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108918/2675580-bry9q9jh61-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107846/2353993-ws5170ptqi-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107619/2285815-3j0lmcl36t-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media106073/1821995-1h6u1bsnsp-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108990/2697045-03im8o010e-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105871/1761502-3xuichdr33-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105358/1607425-hcheacgif0-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105358/1607431-hunqwv098t-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105098/1529506-0jtkptt3t2-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105358/1607428-0xgl4ofkiy-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105098/1529503-845cv8rp5m-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105098/1529545-jwsiiu9apa-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media105358/1607422-0cgq0cl2nk-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media107705/2311537-6tdj4j8pwo-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/185043/3aa17968-dc56-43e0-9c33-ac58d66ee00c.jpg"
-      ],
-      "diferenca": 33,
-      "encontradoNoSite": true
-    },
-    {
       "ean": "3560232704581",
       "id": "456147",
       "title": "Móvel de tv ABANA bege em mdf",
@@ -2789,47 +2336,6 @@
       ],
       "imagensNaEasyreaUrls": [],
       "diferenca": 20,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "3560231013394",
-      "id": "471324",
-      "title": "Móvel de tv HOMELYA bege",
-      "imagensNoSite": 5,
-      "imagensNaKeepeek": 18,
-      "imagensNaEasyrea": 2,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw72e6f88b/images/large/471324_movel_de_tv_homelya_bege_homa_5.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwcfa913b2/images/large/471324_movel_de_tv_homelya_bege_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw529c7d10/images/large/471324_movel_de_tv_homelya_bege_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw64706928/images/large/471324_movel_de_tv_homelya_bege_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw8bbdfef5/images/large/471324_movel_de_tv_homelya_bege_homa_4.jpg"
-      ],
-      "imagensNaKeepeekUrls": [
-        "https://jja.dam-broadcast.com/medias/domain11509/media108642/2592669-p6oq6lkvpa-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108642/2592666-9l5xu5ae49-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108642/2592663-iqk5j8lsew-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108543/2562963-k69a5bkbey-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108650/2595165-ltv6llma4f-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108533/2559936-abm3fimb61-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108533/2560140-4x4d3nnp1w-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108535/2560518-jw3bci15np-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108541/2562303-dfwvh862vy-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108541/2562336-cuk59ocv61-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108541/2562342-ljwe01srl4-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108541/2562351-27rgjdcgeh-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108541/2562357-qfmua1ow93-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108541/2562459-ihon20ehvk-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108569/2570769-6cwa5vyq8k-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108646/2593923-txs415xr04-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media109808/2942694-n2rthu9vf2-xlarge.jpg",
-        "https://jja.dam-broadcast.com/medias/domain11509/media108490/2547165-s2wtfv5aos-xlarge.jpg"
-      ],
-      "imagensNaEasyreaUrls": [
-        "https://media.jja-sa.com/213021/e9f4cd41-4929-4b88-a631-43d5f8151e5e.jpg",
-        "https://media.jja-sa.com/213021/4e15ed2b-1bbe-47b3-8daf-f6d4247b4374.jpg"
-      ],
-      "diferenca": 13,
       "encontradoNoSite": true
     },
     {
@@ -3412,62 +2918,6 @@
       ],
       "imagensNaEasyreaUrls": [],
       "diferenca": 10,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "5602342176150",
-      "id": "446994",
-      "title": "Sofá BRUGES bege 3 lugares",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw236b6df5/images/large/446994_sofa_bruges_bege_3_lugares_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw5821f9a4/images/large/446994_sofa_bruges_bege_3_lugares_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw9c5df976/images/large/446994_sofa_bruges_bege_3_lugares_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw914af800/images/large/446994_sofa_bruges_bege_3_lugares_homa_3.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": -4,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "5602342189082",
-      "id": "456164",
-      "title": "Sofá BRUGES bege com chaise longue",
-      "imagensNoSite": 4,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw9adbc29a/images/large/456164_sofa_bruges_bege_com_chaise_longue_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwad9bdc6b/images/large/456164_sofa_bruges_bege_com_chaise_longue_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw782e49a7/images/large/456164_sofa_bruges_bege_com_chaise_longue_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw59dc9c8b/images/large/456164_sofa_bruges_bege_com_chaise_longue_homa_3.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": -4,
-      "encontradoNoSite": true
-    },
-    {
-      "ean": "5602342196653",
-      "id": "465153",
-      "title": "Sofá cama BREMAN cinza com cofre e chaise longue",
-      "imagensNoSite": 6,
-      "imagensNaKeepeek": 0,
-      "imagensNaEasyrea": 0,
-      "imagensNoSiteUrls": [
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw11e0113b/images/large/465153_sofa_cama_breman_cinza_com_cofre_e_chaise_longue_homa_6.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwef74608f/images/large/465153_sofa_cama_breman_cinza_com_cofre_e_chaise_longue_homa_1.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw050fa8e3/images/large/465153_sofa_cama_breman_cinza_com_cofre_e_chaise_longue_homa_2.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwb0797d2d/images/large/465153_sofa_cama_breman_cinza_com_cofre_e_chaise_longue_homa_3.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dwb4b4318c/images/large/465153_sofa_cama_breman_cinza_com_cofre_e_chaise_longue_homa_4.jpg",
-        "https://www.homa.pt/on/demandware.static/-/Sites-homa-catalog/default/dw3291d777/images/large/465153_sofa_cama_breman_cinza_com_cofre_e_chaise_longue_homa_5.jpg"
-      ],
-      "imagensNaKeepeekUrls": [],
-      "imagensNaEasyreaUrls": [],
-      "diferenca": -6,
       "encontradoNoSite": true
     },
     {
