@@ -89,26 +89,43 @@ function attachImageFallbacks(container) {
   });
 }
 
+async function fetchComRetentativas(url, tentativas = 3) {
+  for (let i = 0; i < tentativas; i++) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) return res;
+      if (i < tentativas - 1) await new Promise((r) => setTimeout(r, 1500));
+    } catch (err) {
+      if (i === tentativas - 1) throw err;
+      await new Promise((r) => setTimeout(r, 1500));
+    }
+  }
+  throw new Error('Falhou apos varias tentativas');
+}
+
 async function downloadImagesForEan(ean) {
   const product = state.products.find((p) => p.ean === ean);
   if (!product) return;
+
   const urls = [
     ...(product.imagensNoSiteUrls || []),
     ...(product.imagensNaKeepeekUrls || []),
     ...(product.imagensNaEasyreaUrls || []),
   ];
+
   if (urls.length === 0) {
     alert('Nao ha imagens para descarregar neste produto.');
     return;
   }
+
   const zip = new JSZip();
   const falhadas = [];
   let sucessos = 0;
+
   for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
     try {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const res = await fetchComRetentativas(url);
       const blob = await res.blob();
       const nomeFicheiro = url.split('/').pop().split('?')[0] || `imagem-${i + 1}.jpg`;
       zip.file(`${i + 1}-${nomeFicheiro}`, blob);
@@ -117,29 +134,29 @@ async function downloadImagesForEan(ean) {
       falhadas.push(url);
     }
   }
-  if (sucessos === 0) {
-    alert(
-      'Nao foi possivel descarregar nenhuma imagem diretamente (bloqueio de CORS dos servidores). ' +
-      'Vou abrir as imagens em separadores novos para as poderes guardar manualmente.'
-    );
-    urls.forEach((url) => window.open(url, '_blank', 'noopener'));
-    return;
+
+  if (sucessos > 0) {
+    const conteudo = await zip.generateAsync({ type: 'blob' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(conteudo);
+    link.download = `${ean}-imagens.zip`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
-  const conteudo = await zip.generateAsync({ type: 'blob' });
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(conteudo);
-  link.download = `${ean}-imagens.zip`;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
+
   if (falhadas.length > 0) {
+    const lista = falhadas.map((u) => `- ${u}`).join('\n');
     alert(
-      `Descarregadas ${sucessos} de ${urls.length} imagens. ` +
-      `${falhadas.length} falharam e foram abertas em separadores novos.`
+      `Descarregadas ${sucessos} de ${urls.length} imagens.\n\n` +
+      `${falhadas.length} imagem(ns) continuam indisponiveis no servidor de origem ` +
+      `(mesmo apos varias tentativas). URLs:\n\n${lista}`
     );
-    falhadas.forEach((url) => window.open(url, '_blank', 'noopener'));
+  } else {
+    alert(`Todas as ${sucessos} imagens foram descarregadas com sucesso.`);
   }
 }
+
 
 function updateDeleteButton() {
   const button = document.getElementById('delete-selected');
